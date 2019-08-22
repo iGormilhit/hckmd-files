@@ -14,61 +14,43 @@ Virgile vient d'acheter un roman pour ado au libraire du coin pour sa bibliothè
 
 ## Étapes
 
-A) Vérification de la présence dans RERO ILS
-* Recherche par ISBN dans tous les documents RERO ILS
-	* Si document présent > voir C
-* Recherche par mots de l'auteur et du titre dans tous les documents RERO ILS
-	* Si document présent > voir C
-* Applique B1, B2, B3, B4 selon préférence et résultats des recherches précédentes
-
-B1) Import d'une base externe
-* Recherche par ISBN dans bases externes
-	* Si document absent > applique B2, B3, B4 selon préférence et résultats des recherches précédentes
-* Importe le document, parmi les records disponibles, qui convient le mieux aux règles de description de sa bibliothèque
-* [Système] Ouvre le document pour édition dans RERO ILS
-* Vérifie les liens aux autorités, valide et sauve le document
-* voir C
-
-B2) Création à partir d'un formulaire vide
-* Crée une nouveau document
-* [Système] Ouvre un formulaire vierge pour édition
-* Complète les données
-* Ajoute les liens aux autorités, valide et sauve le document
-* voir C
-
-B3) Création par duplification
-* Sélectionne un document proche de celui à décrire (même collection ou même auteur par exemple)
-* Copie le document
-* [Système] Ouvre une copie du document pour édition
-* Vérifie les liens aux autorités, valide et sauve le document
-* voir C
-
-B4) Création à partir d'une oeuvre pré-existante
-* Recherche par mots de l'auteur et du titre dans toutes les oeuvres RERO ILS
-* Sélectionne l'oeuvre correspondante à son document
-* Ajoute un document à cette oeuvre
-* [Système] Ouvre le nouveau document pour édition, avec champs préremplis de l'oeuvre
-* Complète les données manquantes
-* Vérifie les liens aux autorités, valide et sauve le document
-* voir C
-
-C) Raccrochage
-* Depuis la vue détaillée du document, ajoute un exemplaire
-* Complète les données de l'exemplaire et sauve
-* [Système] Affiche la vue détaillée du document avec la liste de ses exemplaires
+* Virgile ouvre son navigateur sur la page de recherche des documents afin de déterminer si le document à rajouter existe déjà. Il peut s'y prendre de différentes manières:
+    - recherche par ISBN ou autre identifiants ou par champs libres par ex. auteur titre
+    - il pourra rechercher depuis l'interface de recherche des oeuvres ou des auteurs
+* différents cas se présentent:
+    - Virgile a trouvé une manifestation
+        - raccrochage depuis la vue détaillée du document: Virgile ajoute un exemplaire
+        - Virgile complète les données de l'exemplaire et sauve
+    - Virgile a trouvé une oeuvre
+        - ajoute un document à cette oeuvre
+        - [système] ouvre le nouveau document pour édition, avec champs préremplis de l'oeuvre
+        - Virgile complète les données manquantes
+        - Virgile vérifie les liens aux autorités, valide et sauve le document
+    - Virgile a trouvé une manifestation similaire
+        - il duplique la manifestation depuis la vue détaillée
+        - le [système] ouvre une copie du document pour édition
+        - Virgile vérifie les liens aux autorités, valide et sauve le document
+    - Virgile ne trouve aucune manifestation approchante
+        - depuis le menu de l'interface, il ouvre l'éditeur vide
+        - il peut importer la notice depuis une source externe
+        - il remplit ou complète les informations
+        - il ajoute les liens aux autorités, valide et sauve le document
 
 ## Questions soulevées
 
-* Vue admin: dans la recherche de document, les résultats seront par défaut filtrés avec l'organisation du bibliothécaire connecté?
-	* Si oui, il serait intéressant d'avoir
-		* un bouton "Etendre la recherche à tout RERO ILS".
+* lors de l'édition d'une resource: raccrochage ou création où est-il redirigé dans les différents cas oeuvres, manifestations, autorités
+* pour rechercher si une manifestation existe, doit-on disposer d'une interface recherchant dans différentes resources (manifestation, oeuvre, autorités)?
+* est-ce que Virgile va utiliser l'interface de recherche publique? Faut-il une interface admin spécifique? Va-t-il utiliser la vue détaillée publique ou en faut-il une spécifique admin?
+* dans le cas d'une interface de recherche manifestations admin: les résultats seront-ils filtrés par défault avec l'organisation du bibliothécaire connecté?
+	* si oui, il serait intéressant d'avoir
+		* un bouton "Etendre la recherche à tout RERO ILS"
 		* une option permettant de rechercher directement dans tout RERO ILS
-	* Si non, il serait intéressant d'avoir un bouton permettant au préalable de restreindre la recherche à son organisation, voire à sa bibliothèque
-* Notices masquées: certaines notices peuvent être masquées sur volonté du catalogueur:
+	* si non, il serait intéressant d'avoir un bouton permettant au préalable de restreindre la recherche à son organisation, voire à sa bibliothèque
+* notices masquées [Note: maj ne se rappelle plus de quoi il s'agit]: certaines notices peuvent être masquées sur volonté du catalogueur:
 	* en cours de création (brouillon/draft)
 	* en cours d'acquisition
 	* en cours de suppression
 	* etc.
-* Zones locales: les zones locales peuvent être traitées par une ressource liée au document, et appartenant à une organisation ou à une bibliothèque
+* zones locales: les zones locales peuvent-elles être traitées par une ressource liée au document, et appartenant à une organisation ou à une bibliothèque. Est-ce que elles seront liées à l'exemplaire ou à la manifestation?
 
-Les notices privées ne représentent pas un problème, étant donné qu'il s'agit plutôt d'un type de document (cf. [documentation RERO](https://www.rero.ch/page.php?section=aacr2&pageid=chap_16))
+Note: les notices privées ne représentent pas un problème, étant donné qu'il pourrait s'agir d'un type de document (cf. [documentation RERO](https://www.rero.ch/page.php?section=aacr2&pageid=chap_16))
