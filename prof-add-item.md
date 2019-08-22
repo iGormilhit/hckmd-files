@@ -16,14 +16,14 @@ Virgile vient d'acheter un roman pour ado au libraire du coin pour sa bibliothè
 
 * Virgile ouvre son navigateur sur la page de recherche des documents afin de déterminer si le document à rajouter existe déjà. Il peut s'y prendre de différentes manières:
     - recherche par ISBN ou autre identifiants ou par champs libres par ex. auteur titre
-    - il pourra rechercher depuis l'interface de recherche des oeuvres ou des auteurs
+    - il pourra rechercher depuis l'interface de recherche des œuvres ou des auteurs
 * différents cas se présentent:
     - Virgile a trouvé une manifestation
         - raccrochage depuis la vue détaillée du document: Virgile ajoute un exemplaire
         - Virgile complète les données de l'exemplaire et sauve
-    - Virgile a trouvé une oeuvre
-        - ajoute un document à cette oeuvre
-        - [système] ouvre le nouveau document pour édition, avec champs préremplis de l'oeuvre
+    - Virgile a trouvé une œuvre
+        - ajoute un document à cette œuvre
+        - [système] ouvre le nouveau document pour édition, avec champs préremplis de l'œuvre
         - Virgile complète les données manquantes
         - Virgile vérifie les liens aux autorités, valide et sauve le document
     - Virgile a trouvé une manifestation similaire
@@ -38,12 +38,12 @@ Virgile vient d'acheter un roman pour ado au libraire du coin pour sa bibliothè
 
 ## Questions soulevées
 
-* lors de l'édition d'une resource: raccrochage ou création où est-il redirigé dans les différents cas oeuvres, manifestations, autorités
-* pour rechercher si une manifestation existe, doit-on disposer d'une interface recherchant dans différentes resources (manifestation, oeuvre, autorités)?
+* lors de l'édition d'une ressource: raccrochage ou création où est-il redirigé dans les différents cas œuvres, manifestations, autorités
+* pour rechercher si une manifestation existe, doit-on disposer d'une interface recherchant dans différentes ressources (manifestation, œuvre, autorités)?
 * est-ce que Virgile va utiliser l'interface de recherche publique? Faut-il une interface admin spécifique? Va-t-il utiliser la vue détaillée publique ou en faut-il une spécifique admin?
-* dans le cas d'une interface de recherche manifestations admin: les résultats seront-ils filtrés par défault avec l'organisation du bibliothécaire connecté?
+* dans le cas d'une interface de recherche manifestations admin: les résultats seront-ils filtrés par défaut avec l'organisation du bibliothécaire connecté?
 	* si oui, il serait intéressant d'avoir
-		* un bouton "Etendre la recherche à tout RERO ILS"
+		* un bouton "Étendre la recherche à tout RERO ILS"
 		* une option permettant de rechercher directement dans tout RERO ILS
 	* si non, il serait intéressant d'avoir un bouton permettant au préalable de restreindre la recherche à son organisation, voire à sa bibliothèque
 * notices masquées [Note: maj ne se rappelle plus de quoi il s'agit]: certaines notices peuvent être masquées sur volonté du catalogueur:
