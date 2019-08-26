@@ -46,11 +46,20 @@ Virgile vient d'acheter un roman pour ado au libraire du coin pour sa bibliothè
 		* un bouton "Étendre la recherche à tout RERO ILS"
 		* une option permettant de rechercher directement dans tout RERO ILS
 	* si non, il serait intéressant d'avoir un bouton permettant au préalable de restreindre la recherche à son organisation, voire à sa bibliothèque
-* notices masquées [Note: maj ne se rappelle plus de quoi il s'agit]: certaines notices peuvent être masquées sur volonté du catalogueur:
-	* en cours de création (brouillon/draft)
-	* en cours d'acquisition
-	* en cours de suppression
-	* etc.
-* zones locales: les zones locales peuvent-elles être traitées par une ressource liée au document, et appartenant à une organisation ou à une bibliothèque. Est-ce que elles seront liées à l'exemplaire ou à la manifestation?
+* notices masquées pour le lecteur sur volonté du catalogueur (pour diverses
+  raisons, comme brouillon, acquisition...): quelles ressources peuvent être
+  masquées (œuvre, manifestation, item). Doit faire l'objet d'autres
+  scénarios qui intègreraient les différentes notions de notices masquées (ou autre mécanisme).
+* zones locales: les zones locales peuvent-elles être traitées par une
+  ressource liée au document, et appartenant à une organisation ou à une
+  bibliothèque. Est-ce que elles seront liées à l'exemplaire ou à la
+  manifestation? D'autres scénarios doivent (peut-être) être écrits pour traitées les
+  besoins de zones locales.
+- scénarios à ajouter: importation de notices externe, création et utilisation
+  de *template* de catalogage
+- la recherche d'une manifestation, a-t-on un seul champ de saisie, ou une
+  recherche avancée (éventuellement autre scénario)?
+- [à explorer peut-être] Faut-il avoir des interfaces de recherche dédiées à
+  certaines tâches (ajouter un exemplaire...)?
 
 Note: les notices privées ne représentent pas un problème, étant donné qu'il pourrait s'agir d'un type de document (cf. [documentation RERO](https://www.rero.ch/page.php?section=aacr2&pageid=chap_16))
