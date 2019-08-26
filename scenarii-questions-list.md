@@ -63,5 +63,3 @@ champ de recherche ou avec un masque de recherche de type recherche avancée ?
    - Il fait une demande sur un exemplaire emprunté.
    - Il fait une demande de PEB.
    - Il fait une suggestion d'achat.
-
-
