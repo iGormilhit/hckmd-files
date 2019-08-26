@@ -5,6 +5,8 @@ tags: rero-ils, scenario, questions
 
 ## Questions
 
+### Résolues
+
 Q1. Faut-il afficher le nom de la bibliothèque connectée sur tous les écrans ou
    uniquement dans l'interface d'administration ?    
 A1. Oui. L'information est indiquée dans le scénario *Un bibliothécaire se
@@ -14,33 +16,36 @@ Q2. Faut-il avoir un profil pour un bibliothécaire (standard et système) lui
    permettant de déterminer sa bibliothèque par défaut lors de la connexion ?    
 A2. Non.
 
-Q3. Après création, modification, ou raccrochage à une ressource bibliographique
-   (œuvre, manifestation, exemplaire, autorité), où faut-il rediriger le
-   bibliothécaire ?
+### Non encore résolues
 
-Q4. Faut-il avoir des interfaces de recherches dédiées à certaines actions
-   (catalogage, circulation) ?    
-   Par exemple, selon que l'on cherche une manifestation, une œuvre ou
-   autorité, faut-il une interface spécifique ?
-
-Q5. Faut-il une interface professionnelle, pour la recherche et l'affichage des
-vues détaillées ?    
+Q3. Faut-il une interface professionnelle, pour la recherche et l'affichage des
+    vues détaillées ?    
     C'est une question qui se pose dans le cas du catalogage (chercher une
     notices existantes à laquelle se racrocher ou pour la dupliquer), mais
     aussi pour la recherche de document, la possibilité d'éditer un
     enregistrement que le bibliothécaire consulte.
 
-Q6. Si il existe une interface professionnelle pour la recherche de documents,
-est-elle par défaut filtrée à l'organisation du bibliothécaire connecté ?    
-Selon la réponse à cette question, comment le bibliothécaire doit-il étendre ou
-restreindre sa recherche ?
+Q4. Si il existe une interface professionnelle pour la recherche de documents,
+    est-elle par défaut filtrée à l'organisation du bibliothécaire connecté ?    
+    Selon la réponse à cette question, comment le bibliothécaire doit-il étendre ou
+    restreindre sa recherche ?
 
-Q7. Du point de vue des notices bibliographiques, est-ce que des zones locales
-sont nécessaire, où est-ce que le niveau des holdings suffit ?    
+Q5. Si la recherche professionnelle existe, fonctionne-t-elle avec un seul
+    champ de recherche ou avec un masque de recherche de type recherche avancée ?
+
+Q6. Faut-il avoir des interfaces de recherches dédiées à certaines actions
+   (catalogage, circulation) ?    
+   Par exemple, selon que l'on cherche une manifestation, une œuvre ou
+   autorité, faut-il une interface spécifique ?
+
+Q7. Après création, modification, ou raccrochage à une ressource bibliographique
+    (œuvre, manifestation, exemplaire, autorité), où faut-il rediriger le
+    bibliothécaire ?
+
+Q8. Du point de vue des notices bibliographiques, est-ce que des zones locales
+    sont nécessaire, où est-ce que le niveau des holdings suffit ?    
     Selon la réponse à la question, d'autres scénarios pourront être rédigés.
 
-Q8. Si la recherche professionnelle existe, fonctionne-t-elle avec un seul
-champ de recherche ou avec un masque de recherche de type recherche avancée ?
 
 ## Missing scenarii
 
