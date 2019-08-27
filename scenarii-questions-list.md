@@ -18,17 +18,30 @@ A2. Non.
 
 ### Non encore résolues
 
-Q3. Faut-il une interface professionnelle, pour la recherche et l'affichage des
-    vues détaillées ?    
+Q3. Faut-il une interface professionnelle, pour la recherche et l'affichage des vues détaillées ?    
     C'est une question qui se pose dans le cas du catalogage (chercher une
     notices existantes à laquelle se racrocher ou pour la dupliquer), mais
     aussi pour la recherche de document, la possibilité d'éditer un
     enregistrement que le bibliothécaire consulte.
+    
+Une vue admin dédiée permettrait par exemple:
+* un affichage plus condensé ou plus détaillé (imagettes, vue JSON/MARC...)
+* des facettes différentes (données de gestion)
+* des boutons d'actions "admin"
+    * sur un document (éditer, supprimer, dupliquer...)
+    * sur une holding (éditer, recevoir un fascicule...)
+    * sur un exemplaire (ajouter, demander pour un lecteur, suivi du transit...)
+* affichage des notices masquées
 
 Q4. Si il existe une interface professionnelle pour la recherche de documents,
     est-elle par défaut filtrée à l'organisation du bibliothécaire connecté ?    
-    Selon la réponse à cette question, comment le bibliothécaire doit-il étendre ou
-    restreindre sa recherche ?
+    Selon la réponse à cette question, comment le bibliothécaire doit-il étendre ou restreindre sa recherche ?
+    
+Possibilités:
+* A priori: un "toggle button" (ON/OFF) à côté de la barre de recherche
+* A posteriori:
+    * option d'élargir les résultats affichés à tout RERO ILS
+    * option de restreindre les résultats affichés à son organisation
 
 Q5. Si la recherche professionnelle existe, fonctionne-t-elle avec un seul
     champ de recherche ou avec un masque de recherche de type recherche avancée ?
@@ -36,11 +49,18 @@ Q5. Si la recherche professionnelle existe, fonctionne-t-elle avec un seul
 Q6. Faut-il avoir des interfaces de recherches dédiées à certaines actions
    (catalogage, circulation) ?    
    Par exemple, selon que l'on cherche une manifestation, une œuvre ou
-   autorité, faut-il une interface spécifique ?
+   autorité, faut-il une interface spécifique ?    
+
+* Catalogage: recherche dans tous RERO ILS (et au-delà) pour raccrochage
+* Prêt: recherche d'abord dans organisation/bibliothèque
+* Types d'entités: il s'agit déjà de recherche avancée
+
 
 Q7. Après création, modification, ou raccrochage à une ressource bibliographique
     (œuvre, manifestation, exemplaire, autorité), où faut-il rediriger le
-    bibliothécaire ?
+    bibliothécaire ?    
+
+* Cf. [issue 376](https://github.com/rero/rero-ils/issues/376
 
 Q8. Du point de vue des notices bibliographiques, est-ce que des zones locales
     sont nécessaire, où est-ce que le niveau des holdings suffit ?    
